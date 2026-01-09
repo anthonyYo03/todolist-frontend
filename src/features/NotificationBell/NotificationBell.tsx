@@ -36,7 +36,7 @@ const NotificationBell: React.FC = () => {
    fetchNotifications();
 
   // Create socket connection inside useEffect
-  const newSocket = io("http://localhost:5402");
+  const newSocket = io(BACKEND_URL);
   setSocket(newSocket);
 
   newSocket.on("connect", () => {
