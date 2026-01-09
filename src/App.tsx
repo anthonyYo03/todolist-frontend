@@ -14,7 +14,7 @@ import ForgotPassword from './ForgotPassword/ForgotPassword';
 import ResetPassword from './ResetPassword/ResetPassword';
 
 
-const ENDPOINT = "http://localhost:5402"; // your backend URL
+// const ENDPOINT = "http://localhost:5402"; // your backend URL
 
 function App() {
   // const [overdueTasks, setOverdueTasks] = useState<any[]>([]);
