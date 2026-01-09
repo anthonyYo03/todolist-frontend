@@ -39,16 +39,32 @@ const GetUserTasks = ({ statusFilter }: GetUserTasksProps) => {
   }
 
   // Fetch tasks on mount
-  useEffect(() => {
-    axios
-      .get(`${BACKEND_URL}/api/tasks`, { withCredentials: true })
-      .then(res => setTasks(res.data))
-      .catch(err => {
-        console.error('Error fetching tasks:', err);
-        toast.error(err?.response?.data?.message || 'Failed to fetch tasks');
-      })
-      .finally(() => setLoading(false));
-  }, []);
+ useEffect(() => {
+  const fetchTasks = async () => {
+    try {
+      const token = localStorage.getItem("token");
+
+      // Only make request if token exists
+      if (!token) return;
+
+      const res = await axios.get(`${BACKEND_URL}/api/tasks`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      setTasks(res.data);
+    } catch (err: any) {
+      console.error("Error fetching tasks:", err);
+      toast.error(err?.response?.data?.message || "Failed to fetch tasks");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchTasks();
+}, []);
+
 
   // Callback to remove task from state after deletion
   const handleDeleteSuccess = (id: string) => {
