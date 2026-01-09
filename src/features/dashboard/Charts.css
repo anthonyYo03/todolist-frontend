@@ -1,0 +1,81 @@
+/* ==============================
+   Tasks Summary (Single Chart)
+   ============================== */
+
+.tasks-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  gap: 16px;
+}
+
+/* Main card */
+.tasks-summary-card {
+  background: linear-gradient(135deg, #f8f9fc 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover (desktop only) */
+.tasks-summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.tasks-summary-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+}
+
+/* Chart wrapper */
+.chart-wrapper {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 16px auto;
+}
+
+/* Total tasks text */
+.tasks-total {
+  font-size: 24px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* ==============================
+   Responsive
+   ============================== */
+
+@media (max-width: 480px) {
+  .tasks-summary-card {
+    padding: 24px 20px;
+  }
+
+  .chart-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+
+  .tasks-summary-title {
+    font-size: 18px;
+  }
+}
+
+/* ==============================
+   Accessibility
+   ============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
