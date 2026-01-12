@@ -57,7 +57,7 @@ const NotificationBell: React.FC = () => {
           withCredentials: true 
         });
       } catch (error) {
-        // If the notification already exists, just ignore the error
+        // If the notification already exists, just ignore the error!!!
         console.error("❌ Error creating notification .If the notification already exists, just ignore the error", error);
       }
     }

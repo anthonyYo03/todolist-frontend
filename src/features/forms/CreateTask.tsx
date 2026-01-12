@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
-import './CreateTask.css'; // Import the CSS file
+import './CreateTask.css';
 import { useNavigate } from 'react-router-dom';
 import BACKEND_URL from '../../config.js';
 
@@ -102,7 +102,7 @@ export default function CreateTask() {
             />
           </div>
 
-          {/* STATUS */}
+  {/* STATUS */}
 
  <div className="form-group"> 
 <label className="form-label">Status</label>       

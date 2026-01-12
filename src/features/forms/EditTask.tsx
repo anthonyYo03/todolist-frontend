@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
 import { useParams, useNavigate } from 'react-router-dom';
-import './CreateTask.css'; // Reuse the same CSS file
+import './CreateTask.css';
 import BACKEND_URL from '../../config.js';
 type Task = {
   _id: string;

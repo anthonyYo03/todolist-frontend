@@ -48,13 +48,12 @@ export default function Login() {
     navigate('/');
   };
 
-  const handleDemoLogin = () => {
-    // Optional: Fill with demo credentials
-    setUserLogin({
-      username: 'demo_user',
-      password: 'demo123'
-    });
-  };
+  // const handleDemoLogin = () => {
+  //   setUserLogin({
+  //     username: 'demo_user',
+  //     password: 'demo123'
+  //   });
+  // };
 
   return (
     <>

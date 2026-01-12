@@ -14,7 +14,6 @@ import ForgotPassword from './ForgotPassword/ForgotPassword';
 import ResetPassword from './ResetPassword/ResetPassword';
 
 
-// const ENDPOINT = "http://localhost:5402"; // your backend URL
 
 function App() {
   // const [overdueTasks, setOverdueTasks] = useState<any[]>([]);
@@ -37,12 +36,7 @@ function App() {
     <>
       <BrowserRouter>
         <Toaster position="top-right" />
-        
-        {/* Notification component always active */}
-       
-
         <Routes>
-          
           <Route path="/" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -52,8 +46,6 @@ function App() {
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      
-    
       </BrowserRouter>
     </>
   );

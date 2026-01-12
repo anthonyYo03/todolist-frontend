@@ -69,13 +69,13 @@
   z-index: 999;
 }
 
-/* Dropdown Container - Fixed Height with Flexbox */
+/* Dropdown Container */
 .notification-dropdown {
   position: absolute;
   top: calc(100% + 12px);
   right: 0;
   width: 380px;
-  height: 500px; /* Fixed height */
+  height: 500px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12), 0 20px 32px rgba(0, 0, 0, 0.08);
@@ -85,7 +85,7 @@
   transform: translateY(-10px);
   animation: dropdown-appear 0.3s ease-out forwards;
   display: flex;
-  flex-direction: column; /* Enable flexbox */
+  flex-direction: column;
 }
 
 .notification-dropdown::before {
@@ -159,11 +159,11 @@
 
 /* Scrollable Notifications Container */
 .notifications-scroll-container {
-  flex: 1; /* Take up remaining space */
+  flex: 1;
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin;
   scrollbar-color: #c1c1c1 transparent;
-  min-height: 0; /* Important for flex child scrolling */
+  min-height: 0; /*For flex child scrolling */
 }
 
 .notifications-scroll-container::-webkit-scrollbar {
@@ -336,7 +336,7 @@
   padding: 16px 24px;
   border-top: 1px solid #f0f2f5;
   text-align: center;
-  flex-shrink: 0; /* Prevent footer from shrinking */
+  flex-shrink: 0;
   background: white;
 }
 

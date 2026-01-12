@@ -81,7 +81,7 @@ const GetUserTasks = ({ statusFilter }: GetUserTasksProps) => {
         
         return (
           <div key={task._id} className={`task-card ${overdue ? 'overdue' : ''}`}>
-            {/* Task Header - Updated to include overdue badge */}
+            
             <div className="task-header">
               <div className="task-name-container">
                 <h3 className="task-name">{task.name}</h3>
@@ -98,8 +98,6 @@ const GetUserTasks = ({ statusFilter }: GetUserTasksProps) => {
             </div>
             
             <p className="task-description">{task.description}</p>
-            
-            {/* Task Dates - Updated to highlight overdue date */}
             <div className="task-dates">
               <div className="date-item">
                 <span className="date-label">Created:</span>
@@ -111,7 +109,6 @@ const GetUserTasks = ({ statusFilter }: GetUserTasksProps) => {
                 <span className="date-label">Due:</span>
                 <span className={`date-value ${overdue ? 'overdue-date' : ''}`}>
                   {new Date(task.dueDate).toLocaleDateString()}
-                  {/* Add overdue indicator */}
                   {overdue && ' ⏰'}
                 </span>
               </div>

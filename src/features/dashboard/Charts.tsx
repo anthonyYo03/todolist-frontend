@@ -46,10 +46,10 @@ const TasksSummary: React.FC<TasksSummaryProps> = ({ tasks }) => {
       legend: {
         position: 'bottom' as const,
          labels: {
-        usePointStyle: true,   // 👈 makes indicators circles
-        pointStyle: 'circle',  // 👈 explicitly circle
-        boxWidth: 10,          // 👈 size of the dot
-        padding: 20,           // 👈 spacing between items
+        usePointStyle: true,   //makes indicators circles
+        pointStyle: 'circle',  //explicitly circle
+        boxWidth: 10,          
+        padding: 20,           
         font: {
           size: 14,
         },

@@ -1,7 +1,3 @@
-/* ==============================
-   Tasks Summary (Single Chart)
-   ============================== */
-
 .tasks-summary-container {
   display: flex;
   flex-direction: column;
@@ -51,9 +47,7 @@
   margin-top: 10px;
 }
 
-/* ==============================
-   Responsive
-   ============================== */
+/*Responsive*/
 
 @media (max-width: 480px) {
   .tasks-summary-card {
@@ -70,9 +64,7 @@
   }
 }
 
-/* ==============================
-   Accessibility
-   ============================== */
+/*Accessibility*/
 
 @media (prefers-reduced-motion: reduce) {
   * {

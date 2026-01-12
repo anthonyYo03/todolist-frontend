@@ -72,13 +72,13 @@
 }
 
 .status-filter {
-  width: 100%; /* full width like inputs */
-  padding: 0.875rem 1rem; /* same as inputs */
-  font-size: 1rem; /* same as inputs */
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
   border-radius: 10px;
-  border: 2px solid #e1e5e9; /* same thickness as inputs */
-  background-color: #fafbfc; /* match inputs */
-  height: 48px; /* explicitly match input height */
+  border: 2px solid #e1e5e9;
+  background-color: #fafbfc;
+  height: 48px;
   box-sizing: border-box;
   cursor: pointer;
 }

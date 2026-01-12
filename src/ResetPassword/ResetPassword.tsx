@@ -111,7 +111,7 @@ export default function ResetPassword() {
               </button>
             </div>
             </div>
- {/* ✅ Live password strength display */}
+ {/*Live password strength display */}
             {password && (
               <p className={`strength-text ${strength.toLowerCase()}`}>
                 Password Strength: {strength}

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import './Dashboard.css';
 import GetUserTasks from '../components/GetTasks';
 import Typewriter from 'typewriter-effect';
-import TasksSummary from './Charts'; // updated chart component
+import TasksSummary from './Charts';
 import NotificationBell from '../NotificationBell/NotificationBell';
 import type { Task } from '../types/Task';
 import { FiLogOut } from "react-icons/fi";
@@ -146,7 +146,7 @@ const handleLogout = async () => {
   );
 }
 
-//Code 2 : With Dummy 
+//Code 2 : With Dummy Components
 // import React, { useEffect, useState } from 'react'; 
 // import axios from 'axios';
 // import toast from 'react-hot-toast';
