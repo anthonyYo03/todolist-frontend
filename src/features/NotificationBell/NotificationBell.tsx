@@ -18,7 +18,7 @@ const NotificationBell: React.FC = () => {
   const [notifications, setNotifications] = useState<Notification[]>([]);
   const [unreadCount, setUnreadCount] = useState<number>(0);
   const [open, setOpen] = useState<boolean>(false);
-  const [_socket, setSocket] = useState<Socket | null>(null);
+  // const [_socket, setSocket] = useState<Socket | null>(null);
 
   // Fetch notifications from backend
   const fetchNotifications = async () => {
@@ -37,7 +37,7 @@ const NotificationBell: React.FC = () => {
 
   // Create socket connection inside useEffect
   const newSocket = io(BACKEND_URL);
-  setSocket(newSocket);
+  // setSocket(newSocket);
 
   newSocket.on("connect", () => {
     console.log("✅ Socket connected");
