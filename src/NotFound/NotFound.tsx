@@ -21,7 +21,7 @@ export default function NotFound() {
 		
 		<p>the page you are looking for not avaible!</p>
 		
-		<a href="" className="link_404" onClick={() => navigate('/')}>Go to Home</a>
+		<a  className="link_404" onClick={() => navigate('/')}>Go to Home</a>
 	</div>
 		</div>
 		</div>

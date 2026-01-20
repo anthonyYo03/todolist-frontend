@@ -57,10 +57,6 @@ export default function EditTask() {
     setTask(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleStatusChange = (status: 'pending' | 'in-progress' | 'completed') => {
-    setTask(prev => ({ ...prev, status }));
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);

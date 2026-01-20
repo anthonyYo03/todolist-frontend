@@ -25,7 +25,7 @@ export default function Login() {
     setIsLoading(true);
     
     try {
-      const res = await axios.post(`${BACKEND_URL}/api/login`, userLogin, { 
+      await axios.post(`${BACKEND_URL}/api/login`, userLogin, { 
         withCredentials: true 
       });
       
