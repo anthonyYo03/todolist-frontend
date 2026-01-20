@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
-import { passwordStrength } from "check-password-strength";
 import './Register.css';
 import { checkPasswordStrength } from '../utils/Password';
 import BACKEND_URL from '../config';

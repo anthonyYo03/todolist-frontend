@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import '../Login/Login.css';
-import { passwordStrength } from "check-password-strength";
 import { checkPasswordStrength } from '../utils/Password';
 import BACKEND_URL from '../config';
 

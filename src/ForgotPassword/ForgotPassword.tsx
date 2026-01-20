@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import '../Login/Login.css';
 import BACKEND_URL from '../config';
