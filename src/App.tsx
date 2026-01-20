@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-// import socketIOClient from 'socket.io-client';
-
 import Register from './Register/Register';
 import Login from './Login/Login';
 import NotFound from './NotFound/NotFound';
@@ -16,22 +13,6 @@ import ResetPassword from './ResetPassword/ResetPassword';
 
 
 function App() {
-  // const [overdueTasks, setOverdueTasks] = useState<any[]>([]);
-
-  // useEffect(() => {
-  //   const socket = socketIOClient(ENDPOINT);
-
-  //   // Listen for overdue tasks from backend
-  //   socket.on("overdueTasks", (tasks: any[]) => {
-  //     setOverdueTasks(tasks);
-  //   });
-
-  //   // Cleanup on unmount
-  //   return () => {
-  //     socket.disconnect();
-  //   };
-  // }, []);
-
   return (
     <>
       <BrowserRouter>
