@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { io, Socket } from "socket.io-client";
+import {io} from "socket.io-client";
 import './NotificationBell.css';
 import { FiBell, FiCheck, FiTrash2, FiClock, FiAlertCircle } from 'react-icons/fi';
 import toast from "react-hot-toast";
